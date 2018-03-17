@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trip_database"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kam.travelexpensemanager.TripDatabase">
+
+    <TextView
+        android:text="Enter your trip details:"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Trip ID"
+        android:ems="10"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editText" />
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="From"
+        android:ems="10"
+        android:layout_marginTop="26dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="To"
+        android:ems="10"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/editText3" />
+
+    <Button
+        android:text="Save"
+        android:textSize="25dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText5"
+        android:layout_alignEnd="@+id/editText5" />
+
+    <Button
+        android:text="cancel"
+        android:textSize="25dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignStart="@+id/editText7" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="End(dd/mm/yyyy)"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+    <EditText
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Approved Budget"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_above="@+id/editText7"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginBottom="34dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Start(dd/mm/yyyy)"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_alignBaseline="@+id/editText5"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Balanced Budget"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignStart="@+id/editText6" />
+</RelativeLayout>
